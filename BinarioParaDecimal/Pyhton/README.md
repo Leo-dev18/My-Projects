@@ -11,4 +11,4 @@ Para usar o conversor, siga estes passos:
 3. Digite um número binário quando solicitado.
 4. O programa exibirá o equivalente decimal do número binário fornecido.
 
-![Texto Alternativo](teste.mp4)
+![Texto Alternativo](teste.gif)

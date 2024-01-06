@@ -12,5 +12,3 @@ Para usar o conversor, siga estes passos:
 4. O programa exibirá o equivalente decimal do número binário fornecido.
 
 ![Texto Alternativo](teste.gif)
-
-eslkdfjlsdkfjsldkfjsldkfjsldkfj

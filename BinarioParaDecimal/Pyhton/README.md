@@ -7,7 +7,7 @@ Este projeto é um simples conversor de números binários para decimais desenvo
 Para usar o conversor, siga estes passos:
 
 1. Clone o repositório para sua máquina local.
-2. Execute o executável `Bin2Dec.exe` encontrado na pasta: `BinarioParaDecimal\Pyhton\dist\Bin2Dec`.
+2. Execute `Bin2Dec.exe` encontrado na pasta: `BinarioParaDecimal\Pyhton\dist\Bin2Dec`.
 3. Digite um número binário quando solicitado.
 4. O programa exibirá o equivalente decimal do número binário fornecido.
 

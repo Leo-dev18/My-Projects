@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+    --cor-primaria: #181818;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #19d8a8;
+    
+    --cor-2: #fd3a3a;
+    --cor-3: #a64df8;
+    --cor-4: #3de770;
+    
+    --cor-hover: #272727;
+
+    --font-titulo: 'Krona One', sans-serif;
+    --font-paragrafo: 'Montserrat', sans-serif;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(--cor-primaria);
+}
+
+p{
+    font-size: large;
+}
+
+header{
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.container_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 4rem 0 4rem 0;
+    color: white;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.container_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    width: 25rem;
+}
+
+.form__input_bin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form__input_dec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Para Firefox */
+}
+
+form input{
+    padding: .7rem;
+    border-radius: .3rem;
+    font-size: medium;
+}
+
+#input_decimal {
+    transition:  0.6s; /* Transição suave de 0.5 segundos */
+}
+
+#input_binario {
+    transition:  0.6s; /* Transição suave de 0.5 segundos */
+}
+
+.txt_error{
+    display: none;
+    color: #fd3a3a;
+    font-size: small;
+    text-align: center;
+}
+
+.container_form button{
+    height: 2.5rem;
+    width: 100%;
+    border-radius: .3rem;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.bt_convert{
+    background-color: #37d466;
+    transition: 0.3s;
+}
+
+.bt_convert:hover{
+    background-color: #238841;
+    font-size: 105%;
+    color: white;
+}
+
+.bt_delete{
+    background-color:#fd3a3a;
+    transition: 0.3s;
+}
+
+.bt_delete:hover{
+    background-color: #9e2323;
+    font-size: 105%;
+    color: white;
+}
+
+.sobre{
+    margin: 4rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container_sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40rem;
+    color: white;
+    text-align: center;
+}
+
+.container_sobre__titulo{
+
+}
+
+.container_sobre__paragrafo{
+    line-height: 1.5rem;
+    text-align:initial
+}
+
+.container_sobre__subtitulo{
+    
+}

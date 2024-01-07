@@ -6,8 +6,8 @@ Este projeto é um simples site conversor de números binários para decimais de
 
 Para usar o conversor, siga estes passos:
 
-1. Acesse o site `https://leo-dev18.github.io/ConversorBinarioWEB/` 
-2. Digite um número binário quando solicitado.
-3. O programa exibirá o equivalente decimal do número binário fornecido.
+1. Acesse o site https://leo-dev18.github.io/ConversorBinarioWEB/ 
+2. Digite um número binário no campo ou inverta clicando no botão.
+3. O programa exibirá o valor equivalente fornecido.
 
 ![Texto Alternativo](assets/teste.gif)

@@ -16,6 +16,8 @@
     --font-paragrafo: 'Montserrat', sans-serif;
 }
 
+/*========================================================*/
+
 *{
     
     border: 0;
@@ -28,6 +30,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/*========================================================*/
+
 body{
     background-color: var(--cor-primaria);
     background-image: url(assets/binariobg.jpg);
@@ -35,9 +39,13 @@ body{
     
 }
 
+/*========================================================*/
+
 p{
     font-size: large;
 }
+
+/*========================================================*/
 
 header{
     background-color: var(--cor-terciaria);
@@ -48,6 +56,8 @@ header{
     box-shadow: 0px 0px 200px 0px #19d8a8a9;
 }
 
+/*========================================================*/
+
 .container_desc{
     display: flex;
     flex-direction: column;
@@ -56,6 +66,8 @@ header{
     margin: 4rem 0 4rem 0;
     color: white;
 }
+
+/*========================================================*/
 
 form{
     display: flex;
@@ -97,52 +109,99 @@ form input{
     font-size: medium;
 }
 
-#input_decimal {
-    transition:  0.6s; /* Transição suave de 0.5 segundos */
+#input_decimal, #input_binario {
+    transition:  0.6s; / 
 }
 
-#input_binario {
-    transition:  0.6s; /* Transição suave de 0.5 segundos */
-}
+/*========================================================*/
 
 .txt_error{
     display: none;
     color: #fd3a3a;
     font-size: small;
     text-align: center;
+    transition: .3s;
 }
+
+/*========================================================*/
 
 .container_form button{
     height: 2.5rem;
-    width: 100%;
     border-radius: .3rem;
     font-size: medium;
     font-weight: 500;
 }
 
-.bt_convert{
-    background-color: #37d466;
-    transition: 0.3s;
-    box-shadow: 0px 0px 50px 0px #37d4665d;
+/*========================================================*/
+
+.container_btCovert_btInvert{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.bt_invert{
+    width: 15%;
+    background-color: #1c9ec5;
+    box-shadow: 0px 0px 50px 0px #1c9ec567;
+    display: flex;    
+    justify-content: center; 
+    align-items: center;   
+    transition: transform .1s, background-color .3s, color .3s, box-shadow .3s;
+}
+.bt_invert img{
+    height: 20px;
+    transition: transform 0.3s ease 0.2s, filter 0.3s ease 0.2s;
+}
+.bt_invert:hover{
+    background-color: #157694;
+}
+.bt_invert:hover img {
+    filter: invert();
+    transform: rotate(180deg);
+}
+.bt_invert:active{
+    box-shadow: 0px 0px 50px 0px #37d46642;
+    transform: scale(0.98);
 }
 
+/*========================================================*/
+
+.bt_convert{
+    width: 85%;
+    background-color: #37d466;
+    box-shadow: 0px 0px 50px 0px #37d46667;
+    transition: transform .1s, background-color .3s, color .3s, box-shadow .3s;
+}
 .bt_convert:hover{
     background-color: #238841;
-    font-size: 105%;
     color: white;
 }
+.bt_convert:active{
+    box-shadow: 0px 0px 50px 0px #37d46642;
+    color: black;
+    transform: scale(0.98);
+}
+
+/*========================================================*/
 
 .bt_delete{
+    width: 100%;
     background-color:#fd3a3a;
-    transition: 0.3s;
-    box-shadow: 0px 0px 50px 0px #fd3a3a5d;
+    transition: .3s;
+    transition: transform .1s, background-color .3s, color .3s, box-shadow .3s;
+    box-shadow: 0px 0px 50px 0px #fd3a3a96;
 }
-
 .bt_delete:hover{
     background-color: #9e2323;
-    font-size: 105%;
     color: white;
 }
+.bt_delete:active{
+    box-shadow: 0px 0px 50px 0px #fd3a3a00;
+    color: black;
+    transform: scale(0.98);
+}
+
+/*========================================================*/
 
 .sobre{
     margin: 4rem 0 4rem 0;
@@ -175,4 +234,30 @@ form input{
 .container_sobre__img{
     border-radius: 2rem;
     box-shadow: 0px 0px 50px 0px #5ef1f13b;
+} 
+
+/*========================================================*/
+
+footer{
+    display: flex;
+    background-color: var(--cor-terciaria);
+    box-shadow: 0px 0px 200px 0px #19d8a8a9;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+.container_info{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.footer__container_links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
 }

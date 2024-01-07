@@ -22,16 +22,19 @@
     <form onsubmit="converter(event)" class="form">
         <div class="container_form">
             <div class="form__input_bin">
-                <label for="input_binario">Número Binário:</label>
+                <label for="input_binario" id="label_binario">Número Binário:</label>
                 <input type="number" id="input_binario" name="input_binario" placeholder="0100011" required>
             </div>
 
             <p id="txt_error" class="txt_error"></p>
 
-            <button type="submit" id="bt_convert" class="bt_convert" onclick="converter()">Converter</button>
+            <div class="container_btCovert_btInvert">
+                <button type="submit" id="bt_convert" class="bt_convert" onclick="converter()">Converter</button>
+                <button type="button" id="bt_invert" class="bt_invert" onclick="inverter()"><img src="assets/invert.png" alt=""></button>
+            </div>
     
             <div class="form__input_dec">
-                <label for="input_binario">Equivalente Decimal:</label>
+                <label for="input_binario" id="label_decimal">Equivalente Decimal:</label>
                 <input type="number" id="input_decimal" placeholder="0" readonly>
             </div>
             
@@ -58,12 +61,12 @@
     <footer>
         <div class="container_info">
             <ul class="footer__container_links">
-                <li class="footer__container_links__link"><img src="assets/instagram.png"Instagram"></li>
+                <li class="footer__container_links__link"><a href="https://www.instagram.com/leoart.z/"><img src="assets/instagram.png"Instagram"></a></li>
                 <li class="footer__container_links__link"><img src="assets/github.png" alt="GitHub"></li>
                 <li class="footer__container_links__link"><img src="assets/linkedin.png" alt="Linkedin"></li>
             </ul>
-            <h1 class="footer__nome">Meus Projetos - Leonardo Moreira<h1></h1>
-            <p class="footer__data">2023</p>
+            <h2 class="footer__nome">Meus Projetos - Leonardo Moreira</h1>
+            <p class="footer__data">2024</p>
         </div>
     </footer>
 

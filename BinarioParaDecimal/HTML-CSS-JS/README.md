@@ -1,14 +1,13 @@
-# Conversor Binário para Decimal
+# Conversor Binário para Decimal WEB
 
-Este projeto é um simples conversor de números binários para decimais desenvolvido em Python. Foi criado como um exercício de programação SEM utilizar bibliotecas de operações matemáticas, para entender melhor a conversão de diferentes bases numéricas.
+Este projeto é um simples site conversor de números binários para decimais desenvolvido em `HTML`, `CSS`, `JavaScript`. Foi criado como um exercício de programação sem utilizar bibliotecas de operações matemáticas, para entender melhor a conversão de diferentes bases numéricas.
 
 ## Como Usar
 
 Para usar o conversor, siga estes passos:
 
-1. Clone o repositório para sua máquina local.
-2. Execute `Bin2Dec.exe` encontrado na pasta: `BinarioParaDecimal\Pyhton\dist\Bin2Dec`.
-3. Digite um número binário quando solicitado.
-4. O programa exibirá o equivalente decimal do número binário fornecido.
+1. Acesse o site `https://leo-dev18.github.io/ConversorBinarioWEB/` 
+2. Digite um número binário quando solicitado.
+3. O programa exibirá o equivalente decimal do número binário fornecido.
 
-![Texto Alternativo](teste.gif)
+![Texto Alternativo](assets/teste.gif)

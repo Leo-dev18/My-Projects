@@ -1,6 +1,6 @@
 # Conversor Binário para Decimal
 
-Este projeto é um simples conversor de números binários para decimais desenvolvido em Python. Foi criado como um exercício de programação SEM utilizar bibliotecas de operações matemáticas, para entender melhor a conversão de diferentes bases numéricas.
+Este projeto é um simples conversor de números binários para decimais desenvolvido em Python. Foi criado como um exercício de programação sem utilizar bibliotecas de operações matemáticas, para entender melhor a conversão de diferentes bases numéricas.
 
 ## Como Usar
 

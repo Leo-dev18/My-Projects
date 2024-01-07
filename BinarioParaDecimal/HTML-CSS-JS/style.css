@@ -81,10 +81,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-input[type="number"] {
-  -moz-appearance: textfield; /* Para Firefox */
-}
-
 form input{
     padding: .7rem;
     border-radius: .3rem;
@@ -151,15 +147,7 @@ form input{
     text-align: center;
 }
 
-.container_sobre__titulo{
-
-}
-
 .container_sobre__paragrafo{
     line-height: 1.5rem;
     text-align:initial
-}
-
-.container_sobre__subtitulo{
-    
 }

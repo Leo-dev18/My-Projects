@@ -1,4 +1,4 @@
-# Portfólio de Desenvolvimento - Leoardo Moreira
+# Portfólio de Desenvolvimento - Leonardo Moreira
 Este repositório reúne alguns de meus projetos que demonstram minhas habilidades, aprendizados e progresso. Meu objetivo é criar um espaço dinâmico que não apenas exiba meu trabalho, mas também sirva como um registro do meu crescimento na área de tecnologia.
 
 ## Sobre Mim

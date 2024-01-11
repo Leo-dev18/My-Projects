@@ -10,4 +10,5 @@ Para usar o conversor, siga estes passos:
 2. Digite um número binário no campo ou inverta clicando no botão.
 3. O programa exibirá o valor equivalente fornecido.
 
+
 ![Texto Alternativo](assets/teste.gif)

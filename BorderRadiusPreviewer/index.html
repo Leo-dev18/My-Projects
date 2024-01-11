@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Binário para Decimal</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+</head>
+<body>
+    
+    <header>
+        <h1 class="header__nome">Meus Projetos - Leonardo Moreira</h1>
+        <h2 class="header__projeto">Border-radius</h2>
+    </header>
+
+    <main>
+        <div class="container_desc">
+            <h1 class="container_desc__titulo">Border-radius</h1>
+            <p class="container_desc__descricao">Utilize os Sliders para definir o arredondadamento da forma!</p>
+        </div>
+        
+       <div class="container_program">
+            <div class="color_palete">
+                <img src="assets/paleta.png" alt="paleta" style="width: 2.2rem; margin-right: .5rem; filter:invert()">
+                <button type="button" id="color_palete__cor1" class="color_palete__cor1" onclick="setcolor('white')"></button>
+                <button type="button" id="color_palete__cor2" class="color_palete__cor2" onclick="setcolor('red')"></button>
+                <button type="button" id="color_palete__cor3" class="color_palete__cor3" onclick="setcolor('green')"></button>
+                <button type="button" id="color_palete__cor4" class="color_palete__cor4" onclick="setcolor('blue')"></button>
+                <button type="button" id="color_palete__cor5" class="color_palete__cor5" onclick="setcolor('yellow')"></button>
+            </div>
+            
+            <div class="program">
+                <div class="container_shape_ajustes">
+                    <div class="container_shape">
+                        <div style="display: flex; width: 100%; justify-content: space-between">
+                            <img src="assets/canto.png" alt="" style="width: 1.6rem; height: 1.6rem; filter: invert(); transform: rotate(-90deg);">
+                            <img src="assets/canto.png" alt="" style="width: 1.6rem; height: 1.6rem; filter: invert();">
+                        </div>
+                        <button type="button" id="shape" class="shape"></button>
+                        <div style="display: flex; width: 100%; justify-content: space-between">
+                            <img src="assets/canto.png" alt="" style="width: 1.5rem; height: 1.5rem; filter: invert(); transform: rotate(180deg);">
+                            <img src="assets/canto.png" alt="" style="width: 1.5rem; height: 1.5rem; filter: invert(); transform: rotate(90deg);">
+                        </div>
+                    </div>
+                    <div class="ajustes">
+                        <div class="container_slide">
+                            <div class="ajuste">
+                                <div class="container_slide__label_slide">
+                                    <div class="label">
+                                        <label for="slider_TopLeft">Geral:</label>
+                                        <img src="assets/quadrado.png" alt="" style="width: 1.5rem; height: 1.5rem; filter: invert(); margin-right: 5px">
+                                    </div>
+                                    <div class="slide">
+                                        <input type="range" min="0" max="50" value="0" step="1" class="slider" id="slider_all" name="slider_all" oninput="rangeValue1.innerText = this.value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     + '%'">
+                                        <p id="rangeValue1" class="label_counter">0</p> 
+                                    </div>
+                                </div>
+                                <img onclick="configReset('all')" src="assets/invert.png" title="Clique para restaurar"  alt="Reverter Mudanças" class="reset_config" style="width: 1.5rem; height:fit-content; filter: invert()">
+                            </div>
+                                <div class="linha">
+                                    <label></label>
+                                </div>
+                            <div class="ajuste">
+                                <div class="container_slide__label_slide">
+                                    <div class="label">
+                                        <label for="slider_TopLeft">Canto Superior Esquerdo:</label>
+                                        <img src="assets/canto.png" alt="" style="width: 2.2rem; height: 2.2rem; filter: invert(); transform: rotate(-90deg)">
+                                    </div>
+                                    <div class="slide">
+                                        <input type="range" min="0" max="100" value="0" step="1" class="slider" id="slider_TopLeft" name="slider_TopLeft" oninput="rangeValue2.innerText = this.value + '%'">
+                                        <p id="rangeValue2" class="label_counter">0</p> 
+                                    </div>
+                                </div>
+                                <img onclick="configReset('topLeft')" src="assets/invert.png" title="Clique para restaurar" alt="Reverter Mudanças" class="reset_config" style="width: 1.5rem; height:fit-content; filter: invert()">
+                            </div>
+                                <div class="linha">
+                                    <label></label>
+                                </div>
+                            <div class="ajuste">
+                                <div class="container_slide__label_slide">
+                                    <div class="label">
+                                        <label for="slider_TopLeft">Canto Superior Direito:</label>
+                                        <img src="assets/canto.png" alt="" style="width: 2.2rem; height: 2.2rem; filter: invert();">
+                                    </div>
+                                    <div class="slide">
+                                        <input type="range" min="0" max="100" value="0" step="1" class="slider" id="slider_TopRight" name="slider_TopRight" oninput="rangeValue3.innerText = this.value + '%'">
+                                        <p id="rangeValue3" class="label_counter">0</p> 
+                                    </div>
+                                </div>
+                                <img onclick="configReset('topRight')"  src="assets/invert.png" title="Clique para restaurar" alt="Reverter Mudanças" class="reset_config" style="width: 1.5rem; height:fit-content; filter: invert()">
+                            </div>
+                                <div class="linha">
+                                    <label></label>
+                                </div>
+                            <div class="ajuste">
+                                <div class="container_slide__label_slide">
+                                    <div class="label">
+                                        <label for="slider_TopLeft">Canto Inferior Esquerdo:</label>
+                                        <img src="assets/canto.png" alt="" style="width: 2.2rem; height: 2.2rem; filter: invert();  transform: rotate(180deg)">
+                                    </div>
+                                    <div class="slide">
+                                        <input type="range" min="0" max="100" value="0" step="1" class="slider" id="slider_BottomLeft" name="slider_BottomLeft" oninput="rangeValue4.innerText = this.value + '%'">
+                                        <p id="rangeValue4" class="label_counter">0</p> 
+                                    </div>  
+                                </div>
+                                <img onclick="configReset('bottomRight')" src="assets/invert.png" title="Clique para restaurar" alt="Reverter Mudanças" class="reset_config" style="width: 1.5rem; height:fit-content; filter: invert()">
+                            </div>
+                                <div class="linha">
+                                    <label></label>
+                                </div>
+                            <div class="ajuste">
+                                <div class="container_slide__label_slide">
+                                    <div class="label">
+                                        <label for="slider_TopLeft">Canto Inferior Direito:</label>
+                                        <img src="assets/canto.png" alt="" style="width: 2.2rem; height: 2.2rem; filter: invert();  transform: rotate(90deg)">
+                                    </div>
+                                    <div class="slide">
+                                        <input type="range" min="0" max="100" value="0" step="1" class="slider" id="slider_BottomRight" name="slider_BottomRight" oninput="rangeValue5.innerText = this.value + '%'">
+                                        <p id="rangeValue5" class="label_counter">0</p> 
+                                    </div>
+                                </div>
+                                <img onclick="configReset('bottomLeft')" src="assets/invert.png" title="Clique para restaurar" alt="Reverter Mudanças" class="reset_config" style="width: 1.5rem; height:fit-content; filter: invert()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy_css">
+                <div class="container__copy_css">
+                    <p style="color: rgba(255, 255, 255, 0.521);">
+                        <span class="destaque_elemento">.shape</span>{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="destaque_border_radius">border-radius</span>:&nbsp;&nbsp;&nbsp;<span style="color: white;" id="valor_border_radius">0</span><span style="color: white;">;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="destaque_propriedade">width</span>:&nbsp;&nbsp;&nbsp;25rem;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="destaque_propriedade">height</span>:&nbsp;&nbsp;&nbsp;25rem;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="destaque_propriedade">background</span>:&nbsp;&nbsp;&nbsp;rgb(86,255,179);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="destaque_propriedade">box-shadow</span>:&nbsp;&nbsp;&nbsp;0px 0px 30px 0px rgba(86, 255, 179, 0.2);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="destaque_propriedade">transition</span>:&nbsp;&nbsp;&nbsp;backgroud .3s, border-radius .1s, transform .1s;<br>
+                        }
+                    </p>
+                    <div class="copy_css__containerBT">
+                        <button class="copy_css__btGerarCSS" onclick="atualizarBorderRadius()" >Gerar CSS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="sobre">
+            <div class="container_sobre">
+                <h1 class="container_sobre__titulo">Sobre</h1>
+                <br> 
+                <h2 class="container_sobre__subtitulo">Para que serve?</h2><br>
+                <p class="container_sobre__paragrafo">A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browsers) que não suportam corretamente a especificação da propriedade CSS box model.</p>
+                <br>
+                <h2 class="container_sobre__subtitulo">Exemplo:</h2><br>
+                <div style="background-color: rgb(36, 36, 36); padding: 2rem; border-radius: 1rem">
+                    <p class="container_sobre__paragrafo">CSS<br><br>
+                    
+                        .exemplo {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 100%;<br>
+                        }<br><br>
+                        Esse exemplo aplica um arredondademento de 100% (circulo) à forma ".exemplo"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="container_info">
+            <ul class="footer__container_links">
+                <li class="footer__container_links__link"><a href="https://www.instagram.com/leoart.z/"><img src="assets/instagram.png"Instagram"></a></li>
+                <li class="footer__container_links__link"><img src="assets/github.png" alt="GitHub"></li>
+                <li class="footer__container_links__link"><img src="assets/linkedin.png" alt="Linkedin"></li>
+            </ul>
+            <h2 class="footer__nome">Meus Projetos - Leonardo Moreira</h1>
+            <p class="footer__data">2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>

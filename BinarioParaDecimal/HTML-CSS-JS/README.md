@@ -1,6 +1,6 @@
 # Conversor Binário para Decimal WEB
 
-Este projeto é um simples site conversor de números binários para decimais desenvolvido em `HTML`, `CSS`, `JavaScript`. Foi criado como um exercício de programação sem utilizar bibliotecas de operações matemáticas, para entender melhor a conversão de diferentes bases numéricas.
+Este projeto é um simples site conversor de número binário para decimal desenvolvido em `HTML`, `CSS`, `JavaScript`. Foi criado como um exercício de programação para entender melhor a conversão de diferentes bases numéricas e exercitar a programação para WEB.
 
 ## Como Usar
 

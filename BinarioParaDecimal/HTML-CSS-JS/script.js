@@ -79,12 +79,12 @@ function deletarValores() {
 
 function inverter(){
     if (tipo == 1){
-        label_1.textContent = 'Número Decimal:';
-        label_2.textContent = 'Equivalente Binário:';
+        label_1.textContent = 'Decimal:';
+        label_2.textContent = 'Binário:';
         tipo = 2;
     }else{
-        label_1.textContent = 'Número Binário:';
-        label_2.textContent = 'Equivalente Decimal:';
+        label_1.textContent = 'Binário:';
+        label_2.textContent = 'Decimal:';
         tipo = 1;
     };
 

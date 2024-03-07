@@ -22,7 +22,10 @@
     <form onsubmit="converter(event)" class="form">
         <div class="container_form">
             <div class="form__input_bin">
-                <label for="input_binario" id="label_binario">Número Binário:</label>
+                <div>
+                    <label for="input_binario">Número </label>
+                    <label for="input_binario" id="label_binario" style="font-weight: 700;">Binário:</label>
+                </div>
                 <input type="number" id="input_binario" name="input_binario" placeholder="0100011" required>
             </div>
 
@@ -34,7 +37,10 @@
             </div>
     
             <div class="form__input_dec">
-                <label for="input_binario" id="label_decimal">Equivalente Decimal:</label>
+                <div>
+                    <label for="input_binario">Equivalente </label>
+                    <label for="input_binario" id="label_decimal" style="font-weight: 700;">Decimal:</label>
+                </div>
                 <input type="number" id="input_decimal" placeholder="0" readonly>
             </div>
             

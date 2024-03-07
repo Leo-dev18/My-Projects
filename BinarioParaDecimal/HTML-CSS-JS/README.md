@@ -6,7 +6,7 @@ Este projeto é um simples site conversor de número binário para decimal desen
 
 Para usar o conversor, siga estes passos:
 
-1. Acesse o site https://leo-dev18.github.io/ConversorBinarioWEB/ 
+1. Acesse o site https://binario-para-decimal-amber.vercel.app/
 2. Digite um número binário no campo ou inverta clicando no botão.
 3. O programa exibirá o valor equivalente fornecido.
 
